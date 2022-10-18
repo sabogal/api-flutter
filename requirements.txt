@@ -1,0 +1,27 @@
+#DJANGO
+Django==4.0.5
+django-cors-headers==3.13.0
+#DJANGO REST-FRAMEWORK
+djangorestframework==3.13.1
+djangorestframework-simplejwt==5.2.0
+pyrsistent
+matplotlib
+python-decouple
+dj-database-url
+dj-static
+#MYSQL
+PyMySQL==1.0.2
+mysqlclient
+django-mysql==2.2.0
+#HISTORICO DE MODELOS
+django-simple-history==3.0.0
+# suds
+suds==1.0.0
+#request
+requests==2.2.0
+#request-django
+django-crum
+#crontab-django
+django-crontab==0.7.1
+#Swagger
+drf-yasg==1.20.0
