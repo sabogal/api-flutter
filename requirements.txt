@@ -13,6 +13,7 @@ dj-static
 PyMySQL==1.0.2
 mysqlclient
 django-mysql==2.2.0
+gunicorn == 20.1.0
 #HISTORICO DE MODELOS
 django-simple-history==3.0.0
 # suds
