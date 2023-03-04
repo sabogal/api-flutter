@@ -22,7 +22,7 @@ suds==1.0.0
 requests==2.2.0
 #request-django
 django-crum
-#crontab-django
-django-crontab==0.7.1
 #Swagger
 drf-yasg==1.20.0
+#simple_jwt
+djangorestframework-simplejwt==5.2.0

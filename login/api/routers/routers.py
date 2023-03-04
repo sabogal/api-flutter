@@ -1,5 +1,5 @@
 from rest_framework.routers import DefaultRouter
-from login.views import userViewSet
+from login.api.views.views_users import userViewSet
 
 router = DefaultRouter()
 router.register('', userViewSet, basename="user")

@@ -29,11 +29,13 @@ class UserManager(BaseUserManager):
 class User(AbstractBaseUser, PermissionsMixin):
     username = models.EmailField(max_length = 255, unique = True)
     name = models.CharField('Nombres', max_length = 255, blank = True, null = True)
-    token = models.UUIDField(primary_key=False,editable=False,null=True,blank=True)
+    token = models.UUIDField('Token', primary_key=False,editable=False,null=True,blank=True)
     last_name = models.CharField('Apellidos', max_length = 255, blank = True, null = True)
-    is_active = models.BooleanField(default = True)
+    document = models.IntegerField('Documento', unique = True)
+    number_phone = models.IntegerField("Telefono")
+    is_active = models.BooleanField('Estado', default = False)
+    verification_code = models.CharField(max_length = 255, blank = True, null = True)
     is_staff = models.BooleanField(default = False)
-    state = models.PositiveIntegerField(default = 0)
     historical = HistoricalRecords()
     objects = UserManager()
 
